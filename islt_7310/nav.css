@@ -7,12 +7,14 @@
     padding: 15px 15px 15px 15px ;
     margin-top: 0;
     width: 200px; 
+    height: 20px;
     background-color: white;
 }
 
 .nav a{
-    color: #6CB871;
+    color: #173f73;
     text-align: center;
     text-decoration: none;
+    font-family: "Arial", sans-serif;
 }
 
