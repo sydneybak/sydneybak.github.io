@@ -5,11 +5,10 @@
     background-color: white;
     text-align: center;
     list-style-type: none;
-    border: 3px solid #173f73;
-   
+    border: 3px solid #173f73; 
 }
 
-.nav > ul > li{
+.nav > li{
     padding: 0 25px 0 25px;
     color: #173f73;
     display: inline-block;
@@ -21,3 +20,5 @@ nav > ul > li > a{
     font-family: "Arial", sans-serif;
     color: #173f73;
 }
+
+
