@@ -1,6 +1,6 @@
 /* Navigation Stylesheet*/
 
-.nav ul{
+.nav ul li{
     padding: 60px 60px 60px 60px ;
     border: 4px solid #173f73;
     display: inline-block;
