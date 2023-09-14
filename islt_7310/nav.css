@@ -1,18 +1,16 @@
 /* Navigation Stylesheet*/
 
-.nav{
+.nav ul li{
+    display: inline-block;
+    border: 3px #173f73;
     list-style-type: none;
-    margin: 0;
-    padding: 50px 50px 50px 50px ;
+    padding: 15px 15px 15px 15px ;
+    margin-top: 0;
     background-color: white;
     color: #6CB871; 
-    border: 3px #173f73;
     width: 200px;
     text-align: center;
-      
+    font-family: "Arial", sans-serif; 
 }
 
-.nav li {
-    display: inline-block;
-}
 
