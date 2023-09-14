@@ -1,22 +1,23 @@
 /* Navigation Stylesheet*/
 
 nav{
-    border: 3px solid #173f73;
-    color: #173f73;
-    list-style-type: none;
-    text-align: center;
     padding: 10px 0 10px 0;
     margin-top: 0;
     background-color: white;
    
 }
 
-.nav > li{
+nav ul li{
+    border: 3px solid #173f73;
+    text-align: center;
+    color: #173f73;
     display: inline-block;
     padding-right: 50px;
+    list-style-type: none;
+    margin: 0;
 }
 
-.nav a {
+nav ul li a{
     text-decoration: none; 
     font-family: "Arial", sans-serif;
     color: #173f73;
