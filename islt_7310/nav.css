@@ -9,14 +9,14 @@
    
 }
 
-.nav > li{
+.nav > ul > li{
     padding: 0 25px 0 25px;
     color: #173f73;
     display: inline-block;
     margin: 10px;
 }
 
-nav > li > a{
+nav > ul > li > a{
     text-decoration: none; 
     font-family: "Arial", sans-serif;
     color: #173f73;
