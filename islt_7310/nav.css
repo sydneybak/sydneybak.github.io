@@ -9,12 +9,11 @@
     border: 3px #173f73;
     width: 200px;
     text-align: center;
-    font: Arial; 
+    font-family: "Arial", sans-serif; 
       
 }
 
 .nav li {
     display: inline-block;
-    padding: 0 25px 0 25px
 }
 
