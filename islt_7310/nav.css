@@ -1,6 +1,6 @@
 /* Navigation Stylesheet*/
 
-.navbar{
+nav ul li{
     display: inline-block;
     margin: 0;
     padding:15px 15px 15px 15px ;
