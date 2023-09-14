@@ -1,6 +1,6 @@
 /* Navigation Stylesheet*/
 
-.nav{
+.nav ul li{
     display: inline-block;
     border: 3px solid #173f73;
     list-style-type: none;
