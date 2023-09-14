@@ -1,13 +1,13 @@
 /* Navigation Stylesheet*/
 
 .nav ul li{
+    margin: 0;
+    padding: 60px 60x 60px 60px ;
+    border: 4px solid #173f73;
     display: inline-block;
-    border: 3px solid #173f73;
     list-style-type: none;
-    padding: 15px 15px 15px 15px ;
-    margin-top: 0;
     width: 200px; 
-    height: 20px;
+    height: 15px;
     background-color: white;
 }
 
