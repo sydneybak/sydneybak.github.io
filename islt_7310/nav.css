@@ -1,6 +1,6 @@
 /* Navigation Stylesheet*/
 
-.nav{
+nav{
     border: 3px solid #173f73;
     color: #173f73;
     list-style-type: none;
@@ -16,7 +16,7 @@
     padding-right: 50px;
 }
 
-.nav > ul > li > a {
+.nav a {
     text-decoration: none; 
     font-family: "Arial", sans-serif;
     color: #173f73;
