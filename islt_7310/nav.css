@@ -6,11 +6,11 @@ nav{
     background-color: white;
     text-align: center;
     list-style-type: none;
+    border: 3px solid #173f73;
    
 }
 
 nav ul li{
-    border: 3px solid #173f73;
     padding: 25px 0 25px 0;
     color: #173f73;
     display: inline-block;
