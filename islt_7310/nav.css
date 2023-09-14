@@ -1,8 +1,7 @@
 /* Navigation Stylesheet*/
 
 .nav{
-    padding: 25px 25px 25px 25px ;
-    width: 150px;
+    padding: 25px 0 25px 0 ;
     border: 4px solid #173f73;
     color: #173f73;
     list-style-type: none;
