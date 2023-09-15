@@ -19,7 +19,12 @@ main h2 {
     font-weight:bold;
 }
 
-main p ul {
+main p ul li{
+    color: #173F73;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main p ul li ul{
     color: #173F73;
     font-family: Arial, Helvetica, sans-serif;
 }
