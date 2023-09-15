@@ -34,7 +34,7 @@ main blockquote{
     font-weight:bold;
 }
 
-footer{ 
+.footer{ 
     width: 100%;
     position: fixed; 
     height: 60px;
