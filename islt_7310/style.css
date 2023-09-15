@@ -34,12 +34,13 @@ main blockquote{
     font-weight:bold;
 }
 
-footer { 
+footer{ 
     width: 100%;
+    position: fixed; 
     height: 60px;
     color: #CEE8F2;
     text-align: center; 
-    margin-bottom: 0;
+    bottom: 0;
 }
 
 footer p{
