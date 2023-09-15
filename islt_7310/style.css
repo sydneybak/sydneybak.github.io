@@ -40,7 +40,7 @@ main blockquote{
     height: 60px;
     color: #CEE8F2;
     text-align: center; 
-    bottom: 0;
+    margin-bottom: 5px;
 }
 
 footer p{
