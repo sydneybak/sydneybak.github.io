@@ -23,7 +23,7 @@ main p ul li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main p ul li ul{
+main p ul li ul li{
     color: #173F73;
     font-family: Arial, Helvetica, sans-serif;
 }

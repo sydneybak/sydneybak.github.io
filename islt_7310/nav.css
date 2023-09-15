@@ -3,7 +3,7 @@
 nav{
     width: 100%;
     margin-top: 0;
-    padding: 0 20px 0 20px;
+    padding: 0 25px 0 25px;
     height: 60px;
     text-align: center;
     border: 3px solid #173f73; 
@@ -24,6 +24,7 @@ nav ul li{
 nav ul li a{
     text-decoration: none; 
     font-family: "Arial", sans-serif;
+    font-weight: Bold;
     color: #173f73;
     padding: 24px 14px; 
     display: inline-block;
