@@ -13,17 +13,40 @@ main h2 {
     font-weight:bold;
 }
 
+main h3{
+    color: #021859; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
 main p{
     color: #173F73;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main p ul li{
+.indent{
+    text-indent: 50px
+}
+
+.reflectionbox{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.p::first-letter {
+    color: #021859;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+main ul li{
     color: #173F73;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main p ul li ul li{
+main ul li ul li{
     color: #173F73;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,8 +60,10 @@ main blockquote{
 .footer{ 
     width: 100%;
     position: fixed; 
-    height: 60px;
-    color: #CEE8F2;
+    bottom: 0;
+    left: 0;
+    height: 100px;
+    background-color: #CEE8F2;
     text-align: center; 
     margin-bottom: 5px;
 }

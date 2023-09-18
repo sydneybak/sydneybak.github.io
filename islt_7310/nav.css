@@ -7,7 +7,7 @@ nav{
     height: 60px;
     text-align: center;
     border: 3px solid #173f73; 
-    background-color: #CEE8F2;
+    background-color: white;
 
 }
 
@@ -26,7 +26,7 @@ nav ul li a{
     font-family: "Arial", sans-serif;
     font-weight: Bold;
     color: #173f73;
-    padding: 15px 5px; 
+    padding: 0; 
     display: inline-block;
 }
 
