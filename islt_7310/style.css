@@ -1,13 +1,15 @@
 /* Stylesheet */
 
-.heading {
+.heading{
     color: #6CB871; 
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:bold;
+    font-size: 25pt;
+    margin-top: 10px;
+    padding: 0;
+}
 
-    }
-
-main h2 {
+main h2{
     color: #021859; 
     font-family:Arial, Helvetica, sans-serif;
     font-weight:bold;
@@ -19,9 +21,68 @@ main h3{
     font-weight:bold;
 }
 
-main p{
+main{
     color: #173F73;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 14pt;
+}
+
+.aboutlayout{
+    display: grid; 
+    grid-gap: 20px;
+    grid-template-columns: [col1-start] 33%  [col2-start] 33%  [col3-start] 33% [col3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto [row4-end];
+}
+
+.aboutbox{
+    border-radius: 5px;
+    padding: 20px;
+}
+.a {
+    grid-column: col1-start / col3-start;
+    grid-row: row1-start / row3-start;
+}
+
+.b {
+    grid-column: col3-start ;
+    grid-row: row2-start / row3-start;
+}
+.c {
+    grid-column: col1-start / col3-start;
+    grid-row: row3-start /row4-end;
+    background-color: #173F73;
+    color: white;
+    font-size: 125%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 12px; 
+}
+.d {
+    grid-column: col3-start ;
+    grid-row: row4-start ;
+    text-align: center; 
+}
+
+.e{
+    grid-column: col3-start;
+    grid-row: row1start / row2start;
+}
+
+@media only screen and (max-width: 768px){
+    [class*="aboutbox"] {
+        width: 100%;
+      }
+}
+
+
+.links{
+    border: none;
+    background-color: #6CB871;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px; 
+    text-align: center; 
+    text-decoration: none;
+    font-weight: bold; 
 }
 
 .indent{
@@ -38,7 +99,7 @@ main p{
     color: #021859;
     font-weight: bold;
     font-family:Arial, Helvetica, sans-serif;
-    font-size: medium;
+    font-size: 14pt;
 }
 
 main ul li{
@@ -51,15 +112,9 @@ main ul li ul li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-main blockquote{
-    color: #021859; 
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
-}
-
 .footer{ 
     width: 100%;
-    position: fixed; 
+    position: absolute; 
     bottom: 0;
     left: 0;
     height: 100px;
