@@ -6,6 +6,7 @@
                <title>Home</title>
                <link rel="stylesheet" href="style.css">
                <link rel="stylesheet" type="text/css" href="nav.css" >
+               <meta name="viewport" content="width=device-width,initial-scale=1">
 </head>
 <body>
     <header>
@@ -13,11 +14,12 @@
     </header>
     <!-- Nav Bar -->
     <nav>
+        <label id="hamburger">&#9776;</label>
         <ul>
             <li><a  href = "index.html" > Home </a></li>
             <li><a  href  = "about.html" > About </a></li>
             <li><a  href = "project.html" > Projects </a>
-                <ul>
+                <ul id="mobileHide">
                     <li><a href = "#" > Link 1</a></li>
                     <li><a href = "#" >Link 2</a></li> 
                     <li><a href = "#" >Link 3</a></li> 
@@ -45,7 +47,7 @@
     </main>
 
     <footer class= "footerfixed">
-        <p>&copy;Copyright 2023. All rights reserved</p>
+        <p>&copy;Copyright 2023. All rights reserved.</p>
         <p> Sydney Bakker, sbdgf@umsystem.edu</p>
 
     </footer>

@@ -4,9 +4,12 @@
     color: #6CB871; 
     font-family:Georgia, 'Times New Roman', Times, serif;
     font-weight:bold;
-    font-size: 25pt;
-    margin-top: 10px;
-    padding: 0;
+    font-size: 28pt;
+    margin-bottom: 0px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 0;
+    position: relative;
 }
 
 main h2{
@@ -116,7 +119,7 @@ main{
 
 .projectlayout{
     display: grid; 
-    width: 98%;
+    width: 96%;
     grid-gap: 20px;
     grid-template-columns: [col1-start] 25%  [col2-start] 25%  [col3-start] 25% [col4-start] 25% [col4-end];
     grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3end];
@@ -202,10 +205,27 @@ footer p{
 }
 
 /* Media Queries */
-@media only screen and (max-width: 768px){
-    [class*="aboutbox"] {
-        width: 100%;
-      }
+@media only screen and (max-width: 640px){
+    .homelayout{
+        font-size: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .aboutlayout{
+        font-size: 75%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .projectlayout{
+        width: 85%;
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .reflectionbox{
+        display: flex; 
+        flex-wrap: wrap; 
+    }
 }
 
 
