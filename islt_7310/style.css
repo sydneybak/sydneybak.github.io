@@ -228,6 +228,10 @@ main ul li ul li{
     width: 20px;
 }
 
+.iconeffect:hover{
+    transform: scale(1.2);
+}
+
 
 
 /* MEDIA QUERIES */
