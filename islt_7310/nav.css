@@ -12,6 +12,10 @@ nav{
     display:none;
 }
 
+.active{
+    color: #6CB871;
+}
+
 nav ul{
     float: left;
     border: 4px #173f73;

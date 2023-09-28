@@ -1,5 +1,8 @@
 /* Stylesheet */
-
+@font-face {
+    font-family: "Merriweather";
+    src: url(Merriweather/Merriweather-Bold.ttf);
+}
 .heading{
     color: #6CB871; 
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -50,14 +53,14 @@ main{
 .homelayout{
     display: grid; 
     grid-gap: 20px;
-    grid-template-columns: [col1-start] 15%  [col2-start] 52%  [col3-start] 33% [col3-end];
+    grid-template-columns: [col1-start] 15%  [col2-start] 25%  [col3-start] 25% [col4-start] 25% [col4-end];
     grid-template-rows: [row1-start] auto [row2-start] auto [row2end];
 }
 
 .welcomestatement{
     grid-column: col1-start / col3-end;
     grid-row: row1-start / row2-start;
-    font-size: 100%;
+    font-size: 110%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-color: #CEE8F2;
     text-align: center;
@@ -70,14 +73,19 @@ main{
     grid-column: col1-start / col3-start;
     grid-row: row2-start;
     text-align: left;
-    font-size: 110%;
+    font-size: 120%;
+    padding: 20px;
 }
+
 
 .aboutlayout{
     display: grid; 
     grid-gap: 20px;
     grid-template-columns: [col1-start] 33%  [col2-start] 33%  [col3-start] 33% [col3-end];
-    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto [row4-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+}
+.box0{
+    padding: 20px;
 }
 
 .box{
@@ -88,33 +96,31 @@ main{
     border-radius: 50px;
     padding: 20px;  
 }
+
 .a {
     grid-column: col1-start / col3-start;
-    grid-row: row1-start / row3-start;
+    grid-row: row1-start / row2-start;
+    margin-top: 20px;
 }
-
+.e img{
+    grid-column: col3-start;
+    grid-row: row1start / row2start;
+    display: block; 
+    margin: auto;
+}
 .b {
-    grid-column: col3-start ;
+    grid-column: col3-start;
     grid-row: row2-start / row3-start;
 }
 .c {
     grid-column: col1-start / col3-start;
-    grid-row: row3-start /row4-end;
+    grid-row: row2-start;
     background-color: #173F73;
     color: white;
     font-size: 125%;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    border-radius: 12px; 
-}
-.d {
-    grid-column: col3-start ;
-    grid-row: row4-start ;
-    text-align: center; 
-}
-
-.e{
-    grid-column: col3-start;
-    grid-row: row1start / row2start;
+    font-family: "Merriweather", serif;
+    border-radius: 12px;
+    text-align: left;
 }
 
 .projectlayout{
@@ -130,14 +136,29 @@ main{
     grid-row: row1-start / row2-start;
 }
 
+.pals img{
+    grid-column: col1-start;
+    grid-row: row1-start;
+}
+
 .description2{
-    grid-column: col1-start / col3-start;
+    grid-column: col1-start / col4-start;
+    grid-row: row2-start / row3-start;
+}
+
+.walk img{
+    grid-column: col3-start / col4-start;
     grid-row: row2-start / row3-start;
 }
 
 .description3{
-    grid-column: col2-start /col4-end;
+    grid-column: col2-start / col4-end;
     grid-row: row3-start;
+}
+
+.horse img{
+    grid-column: col1-start / col2-start;
+    grid-row: row3-start /row3-end;
 }
 
 .links{
@@ -147,8 +168,12 @@ main{
     color: white;
     border-radius: 20px; 
     text-align: center; 
-    text-decoration: none;
     font-weight: bold; 
+    display: block; 
+}
+
+.links:hover{
+   color: lightgray 
 }
 
 .indent{
@@ -205,6 +230,7 @@ footer p{
 }
 
 /* Media Queries */
+/* Mobile Queries */
 @media only screen and (max-width: 640px){
     .homelayout{
         font-size: 75%;
@@ -212,10 +238,17 @@ footer p{
         flex-wrap: wrap;
         text-align: center;
     }
+
+    .e img{
+        max-width: 150px; 
+        display: block; 
+        margin: auto;  
+    }
     .aboutlayout{
         font-size: 75%;
         display: flex;
         flex-wrap: wrap;
+        margin: 20px;
     }
     .projectlayout{
         width: 85%;
@@ -228,12 +261,52 @@ footer p{
     }
 }
 
+/* Print Queries */
+@media print {
+    *{
+        background: transparent !important;
+        color: black !important;
+        box-shadow: none !important; 
+        text-shadow: none !important; 
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
+    }
+    nav{
+        display: none;
+    }
 
+    .aboutlayout{ 
+        margin: 0;
+        font-size: 90%;
+        padding: 0;
 
+    }
+    .a{
+        grid-column: col1-start / col3-end;
+        grid-row: row1-start / row2-start;
+        margin-top: 0;
+    }
+    .links{
+        display: none;
+    }
+    .b{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        grid-column: col1-start / col3-end;
+        grid-row: row3-start;
+    }
+    .c{
+        font-family: "Merriweather";
+        grid-column: col1-start / col3-end;
+        grid-row: row2-start / row3-start;
+    }
 
-
-
-
-
-
-
+    a[href]::after{
+        content: "["attr(href)"]";
+        color: blue;
+    }
+    .e img{
+        display:none; 
+    }
+    @page{
+      margin: 1in;  
+    }
+}
