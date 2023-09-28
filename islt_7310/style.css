@@ -3,6 +3,7 @@
     font-family: "Merriweather";
     src: url(Merriweather/Merriweather-Bold.ttf);
 }
+
 .heading{
     color: #6CB871; 
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -66,17 +67,17 @@ main{
     text-align: center;
     font-weight: bold;
     border: 1px; 
+    margin-top: 5px;
     border-color: #6CB871;
 }
 
 .purposeparagraph{
-    grid-column: col1-start / col3-start;
+    grid-column: col1-start / col4-start;
     grid-row: row2-start;
     text-align: left;
     font-size: 120%;
     padding: 20px;
 }
-
 
 .aboutlayout{
     display: grid; 
@@ -98,30 +99,33 @@ main{
 }
 
 .a {
-    grid-column: col1-start / col3-start;
+    grid-column: col1-start / col3-end;
     grid-row: row1-start / row2-start;
     margin-top: 20px;
+    font-size: 110%;
 }
 .e img{
-    grid-column: col3-start;
-    grid-row: row1start / row2start;
+    grid-column: col1-start;
+    grid-row: row3start / row3start;
     display: block; 
     margin: auto;
-    width: 250px;
+    width: 275px;
 }
 .b {
-    grid-column: col3-start;
+    grid-column: col2-start /col3-end;
     grid-row: row2-start / row3-start;
+    border-radius: 100px;
 }
 .c {
-    grid-column: col1-start / col3-start;
-    grid-row: row2-start;
+    grid-column: col1-start / col3-end;
+    grid-row: row3-start;
     background-color: #173F73;
     color: white;
     font-size: 125%;
     font-family: "Merriweather", serif;
     border-radius: 12px;
     text-align: left;
+    margin-bottom: 5px;
 }
 
 .projectlayout{
@@ -140,6 +144,7 @@ main{
 .pals img{
     grid-column: col1-start;
     grid-row: row1-start;
+    width: 250px;
 }
 
 .description2{
@@ -150,6 +155,7 @@ main{
 .walk img{
     grid-column: col3-start / col4-start;
     grid-row: row2-start / row3-start;
+    width: 250px;
 }
 
 .description3{
@@ -160,6 +166,7 @@ main{
 .horse img{
     grid-column: col1-start / col2-start;
     grid-row: row3-start /row3-end;
+    width: 250px;
 }
 
 .links{
@@ -188,15 +195,6 @@ main{
 
 }
 
-/*
-.p::first-letter {
-    color: #021859;
-    font-weight: bold;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 14pt;
-}
-*/
-
 main ul li{
     color: #173F73;
     font-family: Arial, Helvetica, sans-serif;
@@ -208,29 +206,32 @@ main ul li ul li{
 }
 
 .footer{  
-    margin-bottom: 0;
+    position: absolute;
+    margin-bottom: -5;
     width: 100%;
-    height: 100px;
-    background-color: #CEE8F2;
+    height: 200px;
     text-align:center;
+    background-image: url(images/mountains1.jpg);
+    background-size: cover;
 }
-
-.footerfixed{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
+.footertext{
     background-color: #CEE8F2;
-
-}
-
-footer p{
+    height: 90%;
+    opacity: 0.7;
+    size: 110%;
     color: #173F73;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+
+}
+.icon{
+    width: 20px;
 }
 
-/* Media Queries */
+
+
+/* MEDIA QUERIES */
 /* Mobile Queries */
 @media only screen and (max-width: 640px){
     .homelayout{
@@ -252,13 +253,26 @@ footer p{
         margin: 20px;
     }
     .projectlayout{
-        width: 85%;
+        width: 95%;
         display:flex;
         flex-wrap: wrap;
     }
     .reflectionbox{
         display: flex; 
         flex-wrap: wrap; 
+    }
+}
+@media only screen and (max-width: 1200px){
+    .aboutlayout{
+        font-size: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px;
+    }
+    .projectlayout{
+        width: 95%;
+        display:flex;
+        flex-wrap: wrap;
     }
 }
 
@@ -276,10 +290,9 @@ footer p{
     }
 
     .aboutlayout{ 
-        margin: 0;
-        font-size: 90%;
+        margin: -10px;
+        font-size: 80%;
         padding: 0;
-
     }
     .a{
         grid-column: col1-start / col3-end;

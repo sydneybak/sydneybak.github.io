@@ -44,8 +44,6 @@ nav a:hover{
     color: #6CB871;
 }
 
-
-
 nav ul li ul{
    display: none; 
    position: absolute; 
@@ -74,6 +72,8 @@ nav>ul>li:hover>ul{
     display: block;
     background-color: #CEE8F2;
 }
+
+
 
 
 /* Mobile Navigation*/
