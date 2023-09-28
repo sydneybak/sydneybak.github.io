@@ -107,6 +107,7 @@ main{
     grid-row: row1start / row2start;
     display: block; 
     margin: auto;
+    width: 250px;
 }
 .b {
     grid-column: col3-start;
