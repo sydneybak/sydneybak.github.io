@@ -83,7 +83,7 @@ main{
     display: grid; 
     grid-gap: 20px;
     grid-template-columns: [col1-start] 33%  [col2-start] 33%  [col3-start] 33% [col3-end];
-    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] 25% [row4-end];
 }
 .box0{
     padding: 20px;
@@ -117,8 +117,8 @@ main{
     border-radius: 100px;
 }
 .c {
-    grid-column: col1-start / col3-end;
-    grid-row: row3-start;
+    grid-column: col2-start / col3-end;
+    grid-row: row3-start /row4-start;
     background-color: #173F73;
     color: white;
     font-size: 125%;
@@ -127,6 +127,15 @@ main{
     text-align: left;
     margin-bottom: 5px;
 }
+
+.f{
+    grid-column: col1-start / col3-start;
+    grid-row: row4-start;
+    background-color: #CEE8F2;
+    border-top-right-radius: 20px;
+    padding: 20px 20px 20px 20px
+}
+
 
 .projectlayout{
     display: grid; 
@@ -314,6 +323,9 @@ main ul li ul li{
         font-family: "Merriweather";
         grid-column: col1-start / col3-end;
         grid-row: row2-start / row3-start;
+    }
+    .f{
+        display: none;
     }
 
     a[href]::after{
