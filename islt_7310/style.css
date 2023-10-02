@@ -55,11 +55,11 @@ main{
     display: grid; 
     grid-gap: 20px;
     grid-template-columns: [col1-start] 15%  [col2-start] 25%  [col3-start] 25% [col4-start] 25% [col4-end];
-    grid-template-rows: [row1-start] auto [row2-start] auto [row2end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
 }
 
 .welcomestatement{
-    grid-column: col1-start / col3-end;
+    grid-column: col1-start / col2-end;
     grid-row: row1-start / row2-start;
     font-size: 110%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -72,13 +72,15 @@ main{
 }
 
 .purposeparagraph{
-    grid-column: col1-start / col4-start;
+    grid-column: col1-start / col4-end;
     grid-row: row2-start;
-    text-align: left;
+    text-align: center;
     font-size: 120%;
     padding: 20px;
 }
+/*.home img{
 
+}*/
 .aboutlayout{
     display: grid; 
     grid-gap: 20px;
@@ -94,7 +96,6 @@ main{
     padding: 20px;
 }
 .box2{
-    border-radius: 50px;
     padding: 20px;  
 }
 
@@ -201,7 +202,6 @@ main{
     padding: 10px;
     margin: 20px;
     border: none;
-
 }
 
 main ul li{
@@ -257,6 +257,10 @@ main ul li ul li{
         max-width: 150px; 
         display: block; 
         margin: auto;  
+    }
+
+    .f{
+        max-width: 300px;
     }
     .aboutlayout{
         font-size: 75%;
