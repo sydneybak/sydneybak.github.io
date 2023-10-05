@@ -47,7 +47,7 @@ nav a:hover{
 nav ul li ul{
    display: none; 
    position: absolute; 
-   background-color: #CEE8F2;
+   background-color: white;
    padding: 4px;
    border-radius: 2px;
 }
@@ -70,7 +70,10 @@ nav ul li ul li a{
 
 nav>ul>li:hover>ul{
     display: block;
-    background-color: #CEE8F2;
+    background-color: white;
+    border-bottom: 2px solid #173f73;
+    border-left: 2px solid #173f73;
+    border-right: 2px solid #173f73;
 }
 
 
