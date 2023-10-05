@@ -63,7 +63,7 @@ main{
     grid-row: row1-start / row2-start;
     font-size: 110%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: #CEE8F2;
+    background: linear-gradient(#CEE8F2,white);
     text-align: center;
     font-weight: bold;
     border: 1px; 
@@ -85,7 +85,7 @@ main{
     display: grid; 
     grid-gap: 20px;
     grid-template-columns: [col1-start] 33%  [col2-start] 33%  [col3-start] 33% [col3-end];
-    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] 25% [row4-end];
+    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row4-start] auto [row4-end];
 }
 .box0{
     padding: 20px;
@@ -104,6 +104,7 @@ main{
     grid-row: row1-start / row2-start;
     margin-top: 20px;
     font-size: 110%;
+    border-bottom: 3px solid #021859;
 }
 .e img{
     grid-column: col1-start;
@@ -118,26 +119,30 @@ main{
     border-radius: 100px;
 }
 .c {
-    grid-column: col2-start / col3-end;
+    grid-column: col1-start / col3-end;
     grid-row: row3-start /row4-start;
-    background-color: #173F73;
-    color: white;
-    font-size: 125%;
+    background-color: white;
+    color: #173F73;
+    font-size: 140%;
     font-family: "Merriweather", serif;
-    border-radius: 12px;
     text-align: left;
     margin-bottom: 5px;
+    text-align: center;
 }
 
 .f{
-    grid-column: col1-start / col3-start;
+    grid-column: col1-start / col3-end;
     grid-row: row4-start;
-    background-color: #CEE8F2;
-    border-top-right-radius: 20px;
-    padding: 20px 20px 20px 20px
+    background-color: #173F73 ;
+    border-radius: 12px;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
 }
-
-
+.whitetext{
+    color: white; 
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
 .projectlayout{
     display: grid; 
     width: 96%;
@@ -198,6 +203,43 @@ caption{
     font-weight:bold; 
 }
 
+.contactlayout{
+    display: grid; 
+    width: 96%;
+    grid-gap: 20px;
+    grid-template-columns: [col1-start] 50% [col2-start] 50% [col2-end];;
+    grid-template-rows: [row1-start] 25% [row2-start] 75% [row2-end];
+}
+
+.contactform{
+    grid-column: col1-start / col2-start;
+    grid-row: row1-start /row2-start;
+    padding: 10px;
+    margin: 10px;
+}
+
+form label{
+    font-weight: bold; 
+}
+
+.blankspace{
+    grid-column: col1-start / col2-end;
+    grid-row: row2-start /row2-end; 
+}
+
+#submit-button{
+    border: none;
+    background-color: #6CB871;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 20px; 
+    text-align: center; 
+    font-weight: bold; 
+    display: block;
+    font-size: 80%;
+}
+
+
 thead th{
     background-color: #CEE8F2;
 }
@@ -229,7 +271,8 @@ tbody tr:nth-child(odd) {
     text-indent: 50px
 }
 
-.reflectionbox{
+.reflectionlayout{
+    width: 96%;
     padding: 10px;
     margin: 20px;
     border: none;
@@ -245,9 +288,19 @@ main ul li ul li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 .footer{  
     position: absolute;
+    margin-bottom: -5px;
+    width: 100%;
+    height: 200px;
+    text-align:center;
+    background-image: url(images/mountains1.jpg);
+    background-size: cover;
+}
+
+.footer2{  
+    position: absolute;
+    bottom: 0;
     margin-bottom: -5px;
     width: 100%;
     height: 200px;
@@ -292,7 +345,10 @@ main ul li ul li{
     }
 
     .f{
-        max-width: 300px;
+        max-width: 640px;
+    }
+    embed{
+        max-width: 400px;
     }
     .aboutlayout{
         font-size: 75%;
