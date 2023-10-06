@@ -354,10 +354,9 @@ main ul li ul li{
         font-size: 75%;
         display: flex;
         flex-wrap: wrap;
-        margin: 20px;
     }
     .projectlayout{
-        width: 95%;
+        width: 100%;
         display:flex;
         flex-wrap: wrap;
     }
@@ -374,7 +373,7 @@ main ul li ul li{
         margin: 20px;
     }
     .projectlayout{
-        width: 95%;
+        width: 100%;
         display:flex;
         flex-wrap: wrap;
     }
