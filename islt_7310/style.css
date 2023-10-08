@@ -222,10 +222,6 @@ form label{
     font-weight: bold; 
 }
 
-.blankspace{
-    grid-column: col1-start / col2-end;
-    grid-row: row2-start /row2-end; 
-}
 
 #submit-button{
     border: none;
