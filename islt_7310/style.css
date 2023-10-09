@@ -54,12 +54,12 @@ main{
 .homelayout{
     display: grid; 
     grid-gap: 20px;
-    grid-template-columns: [col1-start] 15%  [col2-start] 25%  [col3-start] 25% [col4-start] 25% [col4-end];
-    grid-template-rows: [row1-start] auto [row2-start] auto [row3-start] auto [row3-end];
+    grid-template-columns: [col1-start] 33%  [col2-start] 33%  [col3-start] 33% [col3-end];
+    grid-template-rows: [row1-start] auto[row2-start] auto [row3-start] auto [row3-end];
 }
 
 .welcomestatement{
-    grid-column: col1-start / col2-end;
+    grid-column: col1-start /col3-end;
     grid-row: row1-start / row2-start;
     font-size: 110%;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -67,20 +67,39 @@ main{
     text-align: center;
     font-weight: bold;
     border: 1px; 
-    margin-top: 5px;
+    margin-top: 0px;
     border-color: #6CB871;
 }
 
 .purposeparagraph{
-    grid-column: col1-start / col4-end;
-    grid-row: row2-start;
+    grid-column: col1-start / col3-end;
+    grid-row: row2-start /row3-start;
     text-align: center;
     font-size: 120%;
     padding: 20px;
 }
-/*.home img{
 
-}*/
+.home1 img{
+    grid-column: col1-start /col2-start;
+    grid-row: row3-start;
+    width: 300px; 
+    display: flex;
+    padding: 20px;
+
+}
+.home2 img{
+    grid-column: col2-start/col3-start;
+    grid-row: row2-start;
+    width: 300px;
+    padding:20px;
+}
+.home3 img{
+    grid-column: col4-start;
+    grid-row: row3-start;
+    width: 300px;  
+    padding: 20px;
+}
+
 .aboutlayout{
     display: grid; 
     grid-gap: 20px;
@@ -230,7 +249,6 @@ textarea {
     margin-bottom: 10px;
 }
 
-
 #submit-button{
     border: none;
     background-color: #6CB871;
@@ -277,8 +295,9 @@ tbody tr:nth-child(odd) {
 
 .reflectionlayout{
     width: 96%;
+    font-size: 16pt;
     padding: 10px;
-    margin: 20px;
+    margin: 30px;
     border: none;
 }
 
@@ -342,6 +361,7 @@ main ul li ul li{
         text-align: center;
     }
 
+
     .e img{
         max-width: 150px; 
         display: block; 
@@ -363,6 +383,7 @@ main ul li ul li{
         width: 100%;
         display:flex;
         flex-wrap: wrap;
+        font-size: 110%;
     }
     .reflectionbox{
         display: flex; 
@@ -370,6 +391,12 @@ main ul li ul li{
     }
 }
 @media only screen and (max-width: 1200px){
+    .homelayout{
+        font-size: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
     .aboutlayout{
         font-size: 75%;
         display: flex;
@@ -380,6 +407,7 @@ main ul li ul li{
         width: 100%;
         display:flex;
         flex-wrap: wrap;
+        font-size:110%;
     }
 }
 
